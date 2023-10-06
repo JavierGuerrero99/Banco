@@ -1,0 +1,19 @@
+.icono {
+  text-align: center;
+}
+.descrip {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+  font-size: 20px;
+}
+
+.botón {
+  background-color: blue;
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+}
