@@ -11,14 +11,49 @@
   font-size: 20px;
 }
 
-#boton input[type="submit"] {
+.col1{
+  justify-content: left;
+  flex: left;
+}
+.boton {
+  all:unset;
+  cursor: pointer;
   display: block;
   justify-content: center;
-  background-color: black;
-  width: 40%;
-  margin: 0 auto;
+  background-color: rgb(74, 57, 202);
+  width: clamp(100px, 50%, 200px);
+  margin: 0 auto; 
   color:white;
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  padding: 10px 0px;
+}
+.boton-gris{
+  background-color: gray;
+}
+.sup{  
+  padding-left:300px;
+  padding-right:300px;
+  display: flex; /* Utilizamos Flexbox para la disposición */
+  align-items: center; /* Centramos verticalmente */
+  justify-content: center;
+  margin-top: 100px;
+}
+.icono-operaciones{ 
+  display: flex; 
+  flex: 0 0 auto; /* No crece ni se encoge, tamaño fijo */
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+.contenido{
+  display: flex;
+  flex: 1;
+  
+}
+.divbotones{
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+}
+.col1{
+  justify-content: left;
 }
