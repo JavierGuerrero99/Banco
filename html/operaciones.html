@@ -7,26 +7,76 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <div class="sup">
-      <div class="icono-operaciones">
-        <img src="../images/img_BancoMundial.png" alt="ImageOperaciones" />
-      </div>
-      <div class="contenido">
-        <h2 class="display flex">
-          El Banco Mundial tiene un conjunto de servicios a su disposición.
-          Seleccione la opción que desea retirar
-        </h2>
+    <div>
+      <div class="sup">
+        <div class="icono-operaciones">
+          <img src="../images/img_BancoMundial.png" alt="ImageOperaciones" />
+        </div>
+        <div class="contenido">
+          <h2>
+            El Banco Mundial tiene un conjunto de servicios a su disposición.
+            Seleccione la opción que desea retirar
+          </h2>
+        </div>
       </div>
     </div>
     <div class="divbotones">
-        <div>
-        <button class="col1 boton" value="Realizar Retiro" data-url="html/operaciones.html" id="botonRetiro" > Realizar retiro</button>        
-            
-        </div>
-        <div class="col2">
+      <div class="col1">
+        <button
+          class="boton"
+          value="Realizar Retiro"
+          data-url="retiro.html"
+          id="boton"
+        >
+          Realizar retiro
+        </button>
+      </div>
+      <div class="col2">
+        <button
+          class="boton"
+          value="Cambiar Clave"
+          data-url="html/operaciones.html"
+          id="boton"
+        >
+          Cambiar Clave
+        </button>
+      </div>
+    </div>
+    <div class="divbotones">
+      <div class="col1">
+        <button
+          class="boton"
+          value="Consultar Saldo"
+          data-url="html/operaciones.html"
+          id="boton"
+        >
+          Consultar Saldo
+        </button>
+      </div>
+      <div class="col2">
+        <button
+          class="boton"
+          value="Otros servicios"
+          data-url="html/operaciones.html"
+          id="boton"
+        >
+          Otros Servicios
+        </button>
+      </div>
+    </div>
+    <div>
+      <div class="col2">
+        <button
+          class="boton boton-gris"
+          value="Salir"
+          data-url="../index.html"
+          id="boton"
+        >
+          Cancelar
+        </button>
+      </div>
 
-        <button class="boton" value="Realizar Retiro" data-url="html/operaciones.html" id="botonRetiro" > Realizar retiro</button>
-        </div>
-    </div>    
+    </div>
+    <script src="../js/script.js"></script>
   </body>
 </html>

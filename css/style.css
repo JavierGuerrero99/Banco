@@ -11,12 +11,8 @@
   font-size: 20px;
 }
 
-.col1{
-  justify-content: left;
-  flex: left;
-}
 .boton {
-  all:unset;
+  /*all:unset;*/
   cursor: pointer;
   display: block;
   justify-content: center;
@@ -29,31 +25,57 @@
   padding: 10px 0px;
 }
 .boton-gris{
-  background-color: gray;
+  background-color: rgb(95, 91, 91);
+  margin-top: 5%;
 }
-.sup{  
-  padding-left:300px;
-  padding-right:300px;
-  display: flex; /* Utilizamos Flexbox para la disposición */
-  align-items: center; /* Centramos verticalmente */
-  justify-content: center;
-  margin-top: 100px;
+.sup {
+  display: flex;
+  /*flex-direction: column; /* Cambiar a disposición de columna en pantallas pequeñas */
+  align-items: center; /* Centrar horizontalmente en todas las pantallas */
+  text-align: center; /* Centrar el texto */
+  margin-top: clamp(50px, 10%, 50px); /* Utilizar una unidad relativa para el margen superior */
 }
-.icono-operaciones{ 
-  display: flex; 
-  flex: 0 0 auto; /* No crece ni se encoge, tamaño fijo */
+
+.icono-operaciones {
+  flex: 0 0 auto; /* Tamaño fijo para la imagen */
   margin-right: 10px; /* Espacio entre la imagen y el texto */
 }
-.contenido{
+
+.contenido {
+  flex: 1; /* Expande el contenido para ocupar el espacio restante */
+}
+
+.divbotones {
+  margin-top: clamp(50px, 10%, 50px);
   display: flex;
-  flex: 1;
-  
+  justify-content: center;
 }
-.divbotones{
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 100px;
+
+.col1,
+.col2 {
+  flex: 1; /* Hacer que los botones ocupen el espacio disponible de manera equitativa */
+  padding: 0 10px; /* Espacio entre los botones */
+  max-width: 50%; /* Hacer que los botones ocupen como máximo el 50% del ancho */
 }
-.col1{
-  justify-content: left;
+
+@media (max-width: 500px) {
+  /* Estilos para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
+  .sup {
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column; /* Cambiar a disposición de columna en pantallas pequeñas */
+    text-align: center; /* Centrar el contenido en pantallas pequeñas */
+  }
+
+  .divbotones {
+    flex-direction: column; /* Cambiar a disposición de columna en pantallas pequeñas */
+  }
+
+  .col1,
+  .col2 {
+    max-width: 100%; /* Los botones ocupan todo el ancho en pantallas pequeñas */
+  }
 }
+
+
+
