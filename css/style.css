@@ -77,5 +77,18 @@
   }
 }
 
+.sup-otrovalor{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-
+}
+.icono-otrovalor{
+  flex: 0 0 auto;    
+}
+.ingresoValor{
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
