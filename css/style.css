@@ -87,8 +87,61 @@
   flex: 0 0 auto;    
 }
 .ingresoValor{
-  flex: 1;
-  justify-content: center;
   text-align: center;
-  align-items: center;
+}
+.ingresoValor input{
+  width: 20%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+.botoncancelar{
+  background-color: rgb(95, 91, 91);
+}
+.ingresoClave{
+  text-align: center;  
+}
+
+.ingresoClave input[type="password"]{
+  color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 15px;
+  cursor: pointer;
+  text-align: center;
+  
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.number {
+  padding: 10px 20px;
+  font-size: 24px;
+  background-color: #04478f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.number:hover {
+  background-color: #007bff;
+}
+.colum1,
+colum2{
+  margin-right: 20%;
+  
 }
