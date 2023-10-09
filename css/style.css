@@ -106,7 +106,7 @@
 }
 
 .ingresoClave input[type="password"]{
-  color: white;
+  color: rgb(6, 6, 6);
   border-radius: 10px;
   border: 1px solid black;
   padding: 15px;
@@ -144,4 +144,19 @@
 colum2{
   margin-right: 20%;
   
+}
+.claseh3{
+  text-align: center;
+}
+.botoncontinuarfinal{
+  cursor: pointer;
+  display: block;
+  justify-content: right;
+  background-color: rgb(95, 91, 91);
+  width: clamp(100px, 50%, 200px);
+  margin: 0 auto; 
+  color:white;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  padding: 10px 0px;
 }
