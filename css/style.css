@@ -58,7 +58,7 @@
   max-width: 50%; /* Hacer que los botones ocupen como máximo el 50% del ancho */
 }
 
-@media (max-width: 500px) {
+@media (max-width: 350px) {
   /* Estilos para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
   .sup {
     padding-left: 10%;
